@@ -188,7 +188,7 @@ export const getServerSideProps = async (context) => {
     );
 
     if (workspace) {
-      const { host } = new URL(process.env.APP_URL);
+  const { host } = new URL(process.env.NEXT_PUBLIC_APP_URL);
       isTeamOwner = isWorkspaceOwner(session.user.email, workspace);
       workspace.host = host;
       workspace.hostname = `${workspace.slug}.${host}`;

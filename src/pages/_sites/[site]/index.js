@@ -68,7 +68,7 @@ export const getStaticProps = async ({ params }) => {
   let workspace = null;
 
   if (siteWorkspace) {
-    const { host } = new URL(process.env.APP_URL);
+  const { host } = new URL(process.env.NEXT_PUBLIC_APP_URL);
     workspace = {
       domains: siteWorkspace.domains,
       name: siteWorkspace.name,

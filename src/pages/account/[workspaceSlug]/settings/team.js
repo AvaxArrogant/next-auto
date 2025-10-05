@@ -345,7 +345,7 @@ export const getServerSideProps = async (context) => {
     if (workspace) {
       isTeamOwner = isWorkspaceOwner(session.user.email, workspace);
       workspace.inviteLink = `${
-        process.env.APP_URL
+  process.env.NEXT_PUBLIC_APP_URL
       }/teams/invite?code=${encodeURI(workspace.inviteCode)}`;
     }
   }

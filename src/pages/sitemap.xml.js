@@ -4,7 +4,7 @@ export const getServerSideProps = async ({ res }) => {
   const publicPages = ['index', 'auth/login'];
   const staticPages = publicPages.map(
     (staticPagePath) =>
-      `${process.env.APP_URL}${
+  `${process.env.NEXT_PUBLIC_APP_URL}${
         staticPagePath !== 'index' ? `/${staticPagePath}` : ''
       }`
   );

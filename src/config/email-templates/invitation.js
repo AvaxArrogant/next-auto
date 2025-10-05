@@ -1,5 +1,5 @@
 const html = ({ code, name }) => {
-  const link = `${process.env.APP_URL}/teams/invite?code=${encodeURI(code)}`;
+  const link = `${process.env.NEXT_PUBLIC_APP_URL}/teams/invite?code=${encodeURI(code)}`;
 
   return `
 <body>
@@ -14,7 +14,7 @@ const html = ({ code, name }) => {
 };
 
 const text = ({ code, name }) => {
-  const link = `${process.env.APP_URL}/teams/invite?code=${encodeURI(code)}`;
+  const link = `${process.env.NEXT_PUBLIC_APP_URL}/teams/invite?code=${encodeURI(code)}`;
 
   return `
 Hello there!

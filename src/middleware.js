@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const middleware = (req) => {
-  const { host } = new URL(process.env.APP_URL);
+  const { host } = new URL(process.env.NEXT_PUBLIC_APP_URL);
   const url = req.nextUrl.clone();
   const { pathname } = req.nextUrl;
   const hostname = req.headers.get('host');
