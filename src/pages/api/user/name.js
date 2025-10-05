@@ -2,7 +2,7 @@ import {
   validateUpdateName,
   validateSession,
 } from '@/config/api-validation/index';
-import { updateName } from '@/prisma/services/user';
+import { updateName } from '@/lib/server/user';
 
 const handler = async (req, res) => {
   const { method } = req;

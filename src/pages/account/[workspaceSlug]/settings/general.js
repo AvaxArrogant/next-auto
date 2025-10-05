@@ -14,7 +14,7 @@ import Meta from '@/components/Meta/index';
 import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
 import { useWorkspace } from '@/providers/workspace';
-import { getWorkspace, isWorkspaceOwner } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 import { useTranslation } from "react-i18next";
 
 const General = ({ isTeamOwner, workspace }) => {

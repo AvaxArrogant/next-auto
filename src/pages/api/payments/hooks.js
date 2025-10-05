@@ -1,8 +1,7 @@
 import { buffer } from 'micro';
 
 import stripe from '@/lib/server/stripe';
-import { updateSubscription } from '@/prisma/services/customer';
-import prisma from '@/prisma/index';
+import { updateSubscription } from '@/lib/server/customer';
 
 export const config = { api: { bodyParser: false } };
 
@@ -39,7 +38,6 @@ const handler = async (req, res) => {
     return res.status(400).send(`Webhook Error: Event not created`);
   }
 
-  await prisma.$disconnect();
   res.status(200).send({ received: true });
 };
 

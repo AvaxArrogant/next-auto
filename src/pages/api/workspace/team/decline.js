@@ -1,7 +1,7 @@
 import { InvitationStatus } from '@prisma/client';
 
 import { validateSession } from '@/config/api-validation';
-import { updateStatus } from '@/prisma/services/membership';
+import { updateStatus } from '@/lib/server/membership';
 
 const handler = async (req, res) => {
   const { method } = req;

@@ -1,4 +1,4 @@
-import { getDomains } from '@/prisma/services/domain';
+import { getDomains } from '@/lib/server/domain';
 import { validateSession } from '@/config/api-validation';
 
 const handler = async (req, res) => {

@@ -1,4 +1,4 @@
-import { TeamRole } from '@prisma/client';
+// TODO: Replace TeamRole with Supabase equivalent if needed
 import { check } from 'express-validator';
 import initMiddleware from '@/lib/server/init-middleware';
 import validate from '@/lib/server/validate';

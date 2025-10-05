@@ -1,7 +1,7 @@
 import { TeamRole } from '@prisma/client';
 
 import { validateSession } from '@/config/api-validation';
-import { getMember, toggleRole } from '@/prisma/services/membership';
+import { getMember, toggleRole } from '@/lib/server/membership';
 
 const handler = async (req, res) => {
   const { method } = req;

@@ -1,13 +1,13 @@
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import EmailProvider from 'next-auth/providers/email';
 
-import prisma from '@/prisma/index';
+import { supabase } from '@/lib/server/supabase';
+import EmailProvider from 'next-auth/providers/email';
 import { html, text } from '@/config/email-templates/signin';
 import { emailConfig, sendMail } from '@/lib/server/mail';
-import { createPaymentAccount, getPayment } from '@/prisma/services/customer';
+import { createPaymentAccount, getPayment } from '@/lib/server/customer';
 
+// TODO: Replace PrismaAdapter logic with Supabase Auth integration
 export const authOptions = {
-  adapter: PrismaAdapter(prisma),
+  // adapter: PrismaAdapter(prisma), // Remove this line
   callbacks: {
     session: async ({ session, user }) => {
       if (session.user) {

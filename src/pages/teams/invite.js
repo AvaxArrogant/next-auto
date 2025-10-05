@@ -7,7 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import Card from '@/components/Card/index';
 import Button from '@/components/Button';
 import api from '@/lib/common/api';
-import { getInvitation } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 
 const Invite = ({ workspace }) => {
   const { data } = useSession();

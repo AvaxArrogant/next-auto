@@ -7,20 +7,10 @@ const handler = async (req, res) => {
   if (method === 'GET') {
     await validateSession(req, res);
     const { domain } = req.query;
-    const teamId = process.env.VERCEL_TEAM_ID;
-    const response = await api(
-      `${process.env.VERCEL_API_URL}/v6/domains/${domain}/config${
-        teamId ? `?teamId=${teamId}` : ''
-      }`,
-      {
-        headers: {
-          Authorization: `Bearer ${process.env.VERCEL_AUTH_BEARER_TOKEN}`,
-        },
-        method: 'GET',
-      }
-    );
-    const valid = response?.configuredBy ? true : false;
-    res.status(200).json({ data: { valid } });
+  const { checkNetlifyDomain } = require('@/lib/server/netlify');
+  const accessToken = process.env.NETLIFY_ACCESS_TOKEN;
+  const valid = await checkNetlifyDomain(domain, accessToken);
+  res.status(200).json({ data: { valid } });
   } else {
     res
       .status(405)

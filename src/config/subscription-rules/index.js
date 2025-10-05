@@ -1,4 +1,4 @@
-import { SubscriptionType } from '@prisma/client';
+// TODO: Replace SubscriptionType with Supabase equivalent if needed
 
 const rules = {
   [SubscriptionType.FREE]: {

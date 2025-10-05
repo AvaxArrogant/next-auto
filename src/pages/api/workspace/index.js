@@ -4,7 +4,7 @@ import {
   validateCreateWorkspace,
   validateSession,
 } from '@/config/api-validation/index';
-import { createWorkspace } from '@/prisma/services/workspace';
+import { createWorkspace } from '@/lib/server/workspace';
 
 const handler = async (req, res) => {
   const { method } = req;

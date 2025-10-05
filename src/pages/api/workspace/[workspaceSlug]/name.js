@@ -2,7 +2,7 @@ import {
   validateSession,
   validateUpdateWorkspaceName,
 } from '@/config/api-validation/index';
-import { updateName } from '@/prisma/services/workspace';
+// TODO: Implement updateName with Supabase
 
 const handler = async (req, res) => {
   const { method } = req;

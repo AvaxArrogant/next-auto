@@ -11,7 +11,7 @@ import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
 import { useWorkspace } from '@/providers/workspace';
 import { getSession } from 'next-auth/react';
-import { getWorkspace, isWorkspaceCreator } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 import { useTranslation } from "react-i18next";
 
 const Advanced = ({ isCreator }) => {

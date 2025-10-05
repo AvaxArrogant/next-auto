@@ -13,7 +13,7 @@ import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
 import { redirectToCheckout } from '@/lib/client/stripe';
 import { getInvoices, getProducts } from '@/lib/server/stripe';
-import { getPayment } from '@/prisma/services/customer';
+import { getPayment } from '@/lib/server/customer';
 
 const Billing = ({ invoices, products }) => {
   const [isSubmitting, setSubmittingState] = useState(false);

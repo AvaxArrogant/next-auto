@@ -14,7 +14,7 @@ import Meta from '@/components/Meta/index';
 import { useDomains } from '@/hooks/data';
 import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
-import { getWorkspace, isWorkspaceOwner } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 import { useTranslation } from "react-i18next";
 
 const Domain = ({ isTeamOwner, workspace }) => {
@@ -156,7 +156,6 @@ const Domain = ({ isTeamOwner, workspace }) => {
               data.domains.map((domain, index) => (
                 <DomainCard
                   key={index}
-                  apex={process.env.NEXT_PUBLIC_VERCEL_IP_ADDRESS}
                   cname={workspace.hostname}
                   isLoading={isSubmitting}
                   domain={domain}

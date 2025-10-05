@@ -1,5 +1,5 @@
 import { validateSession } from '@/config/api-validation';
-import { getWorkspaces } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 
 const handler = async (req, res) => {
   const { method } = req;

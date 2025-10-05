@@ -1,5 +1,5 @@
 import { validateSession } from '@/config/api-validation';
-import { deleteWorkspace } from '@/prisma/services/workspace';
+import { deleteWorkspace } from '@/lib/server/workspace';
 
 const handler = async (req, res) => {
   const { method } = req;

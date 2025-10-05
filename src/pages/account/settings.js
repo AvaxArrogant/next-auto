@@ -12,7 +12,7 @@ import Meta from '@/components/Meta';
 import Modal from '@/components/Modal/index';
 import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
-import { getUser } from '@/prisma/services/user';
+import { getUser } from '@/lib/server/user';
 import { useTranslation } from "react-i18next";
 
 const Settings = ({ user }) => {

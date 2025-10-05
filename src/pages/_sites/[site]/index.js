@@ -4,10 +4,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import Meta from '@/components/Meta';
-import {
-  getSiteWorkspace,
-  getWorkspacePaths,
-} from '@/prisma/services/workspace';
+
+import { getSiteWorkspace, getWorkspacePaths } from '@/lib/server/site-workspace';
 
 const Site = ({ workspace }) => {
   const router = useRouter();

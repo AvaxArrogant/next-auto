@@ -1,5 +1,5 @@
 import { validateSession } from '@/config/api-validation';
-import { remove } from '@/prisma/services/membership';
+import { remove } from '@/lib/server/membership';
 
 const handler = async (req, res) => {
   const { method } = req;

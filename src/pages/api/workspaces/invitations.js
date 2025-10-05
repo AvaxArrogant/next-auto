@@ -1,5 +1,5 @@
 import { validateSession } from '@/config/api-validation';
-import { getPendingInvitations } from '@/prisma/services/membership';
+import { getPendingInvitations } from '@/lib/server/membership';
 
 const handler = async (req, res) => {
   const { method } = req;

@@ -22,13 +22,14 @@ Nextacular Documentation: [https://docs.nextacular.co](https://docs.nextacular.c
 
 Read the quick start here: [https://docs.nextacular.co/getting-started/quick-start](https://docs.nextacular.co/getting-started/quick-start)
 
-## One-Click Deploy to Vercel 🚀
 
-Deploy to Vercel for free!
+## Deploy to Netlify 🚀
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnextacular%2Fnextacular&env=APP_URL,NEXTAUTH_SECRET,DATABASE_URL,SHADOW_DATABASE_URL,EMAIL_FROM,EMAIL_SERVER_USER,EMAIL_SERVER_PASSWORD,EMAIL_SERVICE,NEXT_PUBLIC_VERCEL_IP_ADDRESS&project-name=nextacular&repo-name=nextacular&demo-title=Nextacular%20-%20Your%20Next%20SaaS%20Project&demo-description=Nextacular%20is%20an%20open-source%20starter%20kit%20that%20will%20help%20you%20build%20SaaS%20platforms%20efficiently%20and%20focus%20on%20developing%20your%20core%20SaaS%20features.&demo-url=https%3A%2F%2Fdemo.nextacular.co&demo-image=https%3A%2F%2Fnextacular.co%2Fimages%2Fseo-cover.png)
+Deploy to Netlify for free!
 
-You might encounter errors after deployment, so make sure you add the necessary [Environment Variables](https://docs.nextacular.co/customization/environment-variables)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nextacular/nextacular)
+
+After deployment, set the required [Environment Variables](https://docs.nextacular.co/customization/environment-variables) in your Netlify dashboard.
 
 Read the [docs](https://docs.nextacular.co) for more details
 
@@ -52,7 +53,7 @@ Read the [docs](https://docs.nextacular.co) for more details
 - [Next.JS](https://nextjs.org) - **13.1.0** (React **18.2.0**)
 - [Tailwind CSS](https://tailwindcss.com) - **3.1.8**
 - [Prisma](https://prisma.io) - **4.4.0**
-- [Vercel](https://vercel.com)
+  
 
 ## Dependencies
 

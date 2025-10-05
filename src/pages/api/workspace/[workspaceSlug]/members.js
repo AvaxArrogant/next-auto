@@ -1,4 +1,4 @@
-import { getMembers } from '@/prisma/services/membership';
+import { getMembers } from '@/lib/server/membership';
 import { validateSession } from '@/config/api-validation';
 
 const handler = async (req, res) => {

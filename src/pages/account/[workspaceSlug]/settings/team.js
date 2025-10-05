@@ -20,7 +20,7 @@ import Meta from '@/components/Meta/index';
 import { useMembers } from '@/hooks/data';
 import { AccountLayout } from '@/layouts/index';
 import api from '@/lib/common/api';
-import { getWorkspace, isWorkspaceOwner } from '@/prisma/services/workspace';
+// TODO: Replace with Supabase workspace service
 import { useTranslation } from "react-i18next";
 
 const MEMBERS_TEMPLATE = { email: '', role: TeamRole.MEMBER };
