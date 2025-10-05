@@ -1,6 +1,7 @@
 # Netlify
 netlify/
 netlify.toml
+.netlify/
 
 # VSCode
 .vscode/
